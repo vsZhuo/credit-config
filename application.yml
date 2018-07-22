@@ -1,0 +1,15 @@
+server: 
+  profiles:
+    active:
+    - dev
+
+spring:
+  profiles: dev
+  applaction:
+    name: credit-config-dev
+
+spring:
+  profiles: test
+  application:
+    name: credit-config-test
+   
