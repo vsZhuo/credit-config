@@ -1,34 +1,34 @@
 spring: 
-  profiles: 
-    active: 
+  profiles:
+    active:
     - dev
----
+--- 
 server: 
-  port: 7001 #×¢²áÖĞĞÄÕ¼ÓÃ7001¶Ë¿Ú,Ã°ºÅºóÃæ±ØĞëÒªÓĞ¿Õ¸ñ
+  port: 7001
 spring: 
   profiles: dev
-  application:
+  application: 
     name: credit-config-eureka-client
 eureka: 
   instance: 
-    hostname: eureka7001.com #Ã°ºÅºóÃæ±ØĞëÒªÓĞ¿Õ¸ñ
+    hostname: eureka7001.com #å†’å·åé¢å¿…é¡»è¦æœ‰ç©ºæ ¼
   client: 
-    register-with-eureka: false #µ±Ç°µÄeureka-server×Ô¼º²»×¢²á½ø·şÎñÁĞ±íÖĞ
-    fetch-registry: false #²»Í¨¹ıeureka»ñÈ¡×¢²áĞÅÏ¢
+    register-with-eureka: false #å½“å‰çš„eureka-serverè‡ªå·±ä¸æ³¨å†Œè¿›æœåŠ¡åˆ—è¡¨ä¸­
+    fetch-registry: false #ä¸é€šè¿‡eurekaè·å–æ³¨å†Œä¿¡æ¯
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka/
 ---
 server: 
-  port: 7001 #×¢²áÖĞĞÄÕ¼ÓÃ7001¶Ë¿Ú,Ã°ºÅºóÃæ±ØĞëÒªÓĞ¿Õ¸ñ
+  port: 7001
 spring: 
   profiles: test
-  application:
+  application: 
     name: credit-config-eureka-client
 eureka: 
   instance: 
-    hostname: eureka7001.com #Ã°ºÅºóÃæ±ØĞëÒªÓĞ¿Õ¸ñ
+    hostname: eureka7001.com #å†’å·åé¢å¿…é¡»è¦æœ‰ç©ºæ ¼
   client: 
-    register-with-eureka: false #µ±Ç°µÄeureka-server×Ô¼º²»×¢²á½ø·şÎñÁĞ±íÖĞ
-    fetch-registry: false #²»Í¨¹ıeureka»ñÈ¡×¢²áĞÅÏ¢
+    register-with-eureka: false #å½“å‰çš„eureka-serverè‡ªå·±ä¸æ³¨å†Œè¿›æœåŠ¡åˆ—è¡¨ä¸­
+    fetch-registry: false #ä¸é€šè¿‡eurekaè·å–æ³¨å†Œä¿¡æ¯
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka/
